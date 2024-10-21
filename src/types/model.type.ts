@@ -1,11 +1,6 @@
-export type Product_Type = {
-	id: number;
-	image_url: string;
-	title: string;
-	price: number;
-	categoria: "electrodomesticos" | "transportes" | "otros";
-	description:string
-};
+import { Database } from "./supabase";
+
+export type Product_Type = Database['public']['Tables']['productos']['Row']
 
 export type Cambio_Type = {
 	USD: number;

@@ -13,7 +13,7 @@ export const Card_Product = ({ item }: { item: Product_Type }) => {
 	return (
 		<li className="w-[270px] h-[270px rounded-xl p-4 fondo-card-producto border-b-2 border-l-2 border-r-2 border-[#c62323] flex flex-col items-center justify-start">
 			<div className="relative w-full h-5/6 my-4 group">
-				<img src={item.image_url} alt={item.title} title={item.title} className="w-full h-full group-hover:opacity-15 duration-300 transition-all ease-in-out rounded-t-lg" />
+				<img src={item.image_url ?? '/assets/img/mingcute--chat-3-fill.png'} alt={item.title} title={item.title} className="w-full h-full group-hover:opacity-15 duration-300 transition-all ease-in-out rounded-t-lg" />
 				<p className="text-white font-light sm:text-sm md:text-lg w-full h-full absolute left-0 top-0 px-4 py-2 opacity-0 group-hover:opacity-100 duration-300 transition-all ease-in-out rounded-t-lg">
 					{item.description}
 				</p>
