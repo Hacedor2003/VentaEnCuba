@@ -22,12 +22,12 @@ const Home_Screen = () => {
 			<img src="/assets/img/Banner 1 Productos Web.svg" alt="Entrega a todas las provincias de cuba por un costo adicional, La Habana y artemisa transporte incluido!!!" title="Entrega a todas las provincias de cuba por un costo adicional, La Habana y artemisa transporte incluido!!!" className="w-full h-[200px] sm:object-none md:object-fill self-center" />
 			<br /><br />
 			<h2>Electrondomesticos</h2>
-			<Lista_Producto_Component products={productos.filter((f) => f.categoria === "electrodomesticos")} key={1}/>
+			<Lista_Producto_Component products={productos.filter((f) => f.category === "electrodomesticos")} key={1}/>
 			<br />
 			<img src="/assets/img/Banner 2 Productos Web.svg" alt="Aceptamos pagos en usd, euro, mlc, zedge" title="Aceptamos pagos en usd, euro, mlc, zedge" className="w-full h-[200px] sm:object-none md:object-fill self-center" />
 			<br /><br />
 			<h2>Transportes:</h2>
-			<Lista_Producto_Component products={productos.filter((f) => f.categoria === "transportes")} key={2}/>
+			<Lista_Producto_Component products={productos.filter((f) => f.category === "transportes")} key={2}/>
 		</motion.section>
 	);
 };

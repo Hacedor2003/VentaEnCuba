@@ -8,7 +8,7 @@ import { Product_Type } from "../types/model.type";
 const Categorias_Screen = () => {
 	const { productos } = useContext(AppContext);
 	const params = useParams();
-	const [productos_show, setProductos_show] = useState<Product_Type[]>(productos.filter((f) => f.categoria === params.categoria));
+	const [productos_show, setProductos_show] = useState<Product_Type[]>(productos.filter((f) => f.category === params.category));
 	const min_price = productos.sort((a, b) => a.price - b.price)[0].price;
 	const max_price = productos.sort((a, b) => b.price - a.price)[0].price;
 
@@ -16,7 +16,7 @@ const Categorias_Screen = () => {
 	const [filter_title, setFilter_title] = useState("");
 
 	useEffect(() => {
-		const category_products = productos.filter((f) => f.categoria === params.categoria);
+		const category_products = productos.filter((f) => f.category === params.category);
 		setProductos_show(category_products.filter((f) => f.price < filter_price));
 		if (filter_title !== "") {
 			setProductos_show(category_products.filter((f) => f.title.includes(filter_title)));
