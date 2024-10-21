@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: ArcaMajora-bold;
+  src: url(/assets/fonts/ArcaMajora3-Bold.otf);
+}
+
+@font-face {
+  font-family: ArcaMajora-Heavy;
+  src: url(/assets/fonts/ArcaMajora3-Heavy.otf);
+}
+
+@font-face {
+  font-family: conthrax;
+  src: url(/assets/fonts/conthrax-sb.ttf);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.fondo-home {
+  background-image: url('/assets/img/home.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen and (min-width:750px) {
+  .fondo-home {
+    background-image: url('/assets/img/home.webp');
+    background-position: 0px -95px;
+  }
+
+  .fondo-contacto {
+    background-image: url('/assets/img/atencion\ al\ cliente.webp');
+  }
+}
+
+.fondo-contacto {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width:400px) {
+  .fondo-home {
+    background-image: url('/assets/img/inicio movil.webp');
+  }
+
+  .fondo-contacto {
+    background-image: url('/assets/img/mulata movil.webp');
+  }
+}
+
+.fondo-nosotros {
+  background-image: url('/assets/img/mapa\ mundo.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.fondo-servicios {
+  background-image: url("/assets/img/muelle-servicios.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#CONTACTOS input,
+#CONTACTOS textarea {
+  @apply w-full rounded-3xl px-6 py-4 bg-white font-ArcaMajora-bold
+}
+
+@keyframes animacion-navbar-in {
+  from {
+    /* background-color: #c62323; */
+    height: 120px;
+    width: 100%;
+    border-radius: 0px;
+    margin-top: 0rem;
+  }
+
+  to {
+    /* background-color: #c623237b; */
+    height: 70px;
+    width: 91%;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+}
+
+.animacion-on {
+  animation: animacion-navbar-in 1.5s normal ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animacion-navbar-out {
+  from {
+    /* background-color: #c623237b; */
+    height: 70px;
+    width: 91%;
+    border-radius: 10px;
+    margin-top: 1rem;
+  }
+
+  to {
+    /* background-color: #c62323; */
+    height: 120px;
+    width: 100%;
+    border-radius: 0px;
+    margin-top: 0rem;
+  }
+}
+
+.animacion-off {
+  animation: animacion-navbar-out 1.5s normal ease;
+  animation-fill-mode: forwards;
+}
+
+.fondo-card-producto {
+  background: linear-gradient(200deg, #c62323 55%, transparent 55%);
+}
+
+h2 {
+@apply text-3xl font-bold font-sans my-2 text-principal
+}
+
+header {
+  background: linear-gradient(20deg, #c62323 55%, #c6232361 55%);
+}
