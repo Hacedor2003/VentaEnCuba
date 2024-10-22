@@ -40,7 +40,7 @@ const Header_Component = () => {
 						<Link to={`/`} title="Inicio">Inicio</Link>
 					</li>
 					<li className={`hover:scale-110 border-white transition-all ease-in-out duration-300 ${location.pathname === "/categoria/electrodomesticos" ? "border-b-2" : ""}`} key="electrodomesticos">
-						<Link to={`/categoria/electrodomesticos`} title="Electrodomesticos">Electrodomesticos</Link>
+						<Link to={`/categoria/electrodomesticos`} title="electrodomesticos">Electrodomesticos</Link>
 					</li>
 					<li className={`hover:scale-110 border-white transition-all ease-in-out duration-300 ${location.pathname === "/categoria/transporte" ? "border-b-2" : ""}`} key="transporte">
 						<Link to={`/categoria/transportes`} title="Transporte">Transporte</Link>
@@ -65,7 +65,7 @@ const Header_Component = () => {
 								<Link to={`/`} title="Inicio">Inicio</Link>
 							</li>
 							<li className={`hover:scale-110 border-white transition-all ease-in-out duration-300 ${location.pathname === "/categoria/electrodomesticos" ? "border-b-2" : ""}`} key="electrodomesticos">
-								<Link to={`/categoria/electrodomesticos`} title="Electrodomesticos">Electrodomesticos</Link>
+								<Link to={`/categoria/electrodomesticos`} title="electrodomesticos">Electrodomesticos</Link>
 							</li>
 							<li className={`hover:scale-110 border-white transition-all ease-in-out duration-300 ${location.pathname === "/categoria/transporte" ? "border-b-2" : ""}`} key="transporte">
 								<Link to={`/categoria/transportes`} title="Transporte">Transporte</Link>
