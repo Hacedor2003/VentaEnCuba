@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ChangeEvent, Suspense, useContext, useEffect, useState } from "react";
+import {  Suspense, useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { AppContext } from "../data/Context";
 import { Card_Product } from "../components/Card_Product";
