@@ -29,8 +29,8 @@ const Categorias_Screen = () => {
 	}
 
 	return (
-		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="w-full flex flex-row items-start justify-start gap-3">
-			<aside className="w-1/3 h-full flex flex-col items-start justify-start">
+		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className="w-full flex sm:flex-col md:flex-row sm:items-end sm:justify-center md:items-start md:justify-start gap-3">
+			<aside className="sm:w-full md:w-1/3 h-full flex flex-col items-start justify-start">
 				<h3 className="w-full text-center text-2xl font-bold">Filtros:</h3>
 				<div>
 					<h4 className="text-xl">Precio:</h4>
